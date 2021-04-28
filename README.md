@@ -19,7 +19,7 @@ For each digit,to find it's phonetic equivalent I defined an array with all the 
 * converted the number to a string and iterated through the given array/converted string array using "for" to get each digit's phonetic
 * converted the number to a string and iterated through the given array/converted string array using "reduce" to get each digit's phonetic
 which had better performance
-* getting each digit by modulo without converting to string and using "reduce" gives me the performance
+* getting each digit by modulo without converting to string and using "reduce" gives me the fastest performance
 
 ### Benchmark result:
 
@@ -34,3 +34,8 @@ OneTwoSevenEightTwoThreeFour,ThreeNineFourTwoSixThreeOneOne,FourThreeFourThreeFo
 benchmark3: 0.1ms
 
 OneTwoSevenEightTwoThreeFour,ThreeNineFourTwoSixThreeOneOne,FourThreeFourThreeFourOne,TwoThree,FourTwoThree,FourTwoThree
+
+### Argument Parsing:
+For the final submission we write this command to read the integers from the cmd line(argument parsing):
+process.argv.slice(2, process.argv.length)
+
